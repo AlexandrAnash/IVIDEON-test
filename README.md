@@ -1,4 +1,2 @@
 IVIDEON-test
 ============
-
-test task
