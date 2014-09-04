@@ -1,0 +1,68 @@
+
+ <div class="row margin-none" name="top">
+	<div class="row margin-none title-list-camera">
+		<h3>
+			Favorite Cameras
+		</h3>
+	</div>	
+	<accordion>
+	<div ng-repeat="(key, data) in videoList | orderBy : 'bookmark' : reverse=true ">
+			<accordion-group >
+			<!-- <accordion-group> -->
+				<accordion-heading  ng-click="showFullCamera(data, key)" is-disabled="true">
+					<div class="row margin-none block-camera-mini" ng-init="getUrlImgCamera(data, key)">
+						<div class="col-xs-3 padding-none camera-image-mini">
+							<img class="max-height" ng-src="{{data.img}}">
+							<!-- <img class="max-height" ng-src="{{data.img}}"> -->
+						</div>
+						</a>
+						<div class="col-xs-9 camera-content-mini">
+							<div class="row margin-none upper-block">
+								<div class="col-xs-10 padding-none max-height">
+									<h3 class="margin-none title-camera  dot_dot_dot">
+										{{data.camera_name}}
+									</h3>
+								</div>
+								<div class="col-xs-2 padding-none" > <span class="glyphicon pull-right" ng-class="{'glyphicon-star': data.bookmark, 'glyphicon-star-empty' : !data.bookmark}" ng-click="editBookmark(data, key)"></span></div>
+
+								 
+							</div>
+							<div class="row margin-none lower-block">				
+								<div class="col-xs-12 padding-none uppercase-text ">Total views: {{data.total_views}}</div>
+							</div>
+						</div>
+					</div>
+				</accordion-heading>
+				<div class="row margin-none block-camera-max">
+					<div class="close-max" ng-click="toggleOpen()">X</div>
+					<div class="row margin-none ">
+						<img class="camera-image-max sample-show-hide" ng-src="{{data.img}}">
+					</div>
+					<div class="content-camera-max">
+						<div class="row margin-none">
+							<div class="col-xs-10 padding-none max-height">
+									<h3 class="title-camera  dot_dot_dot">
+										{{data.camera_name}}
+									</h3>
+								</div>
+								<div class="col-xs-2 padding-none"> <span class="glyphicon pull-right" ng-class="{'glyphicon-star': false, 'glyphicon-star-empty' : true}" ng-click="editBookmark(data, key)"></span></div>
+						</div>
+						<div class="row margin-none">
+							<h3 class=" dot_dot_dot">
+								{{data.misc.description}}
+							</h3>
+						</div>
+						<div class="row margin-none lower-block-max">
+							<div class="uppercase-text ">Total views: {{data.total_views}}</div>
+						</div>
+					</div>
+				</div>
+			</accordion-group>
+
+	</div>
+	</accordion>
+	<div class="row margin-none title-list-camera lower-block-list">
+		<div class="col-xs-3 btn btn-info uppercase-text" onClick="scroll(0,0); return false">&uarr; TOP </div>
+		<div class="col-xs-3 btn btn-success uppercase-text pull-right" ng-click="getMoreCamera()">MORE</div>
+	</div>
+</div>

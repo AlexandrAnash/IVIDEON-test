@@ -1,0 +1,129 @@
+.main-container {
+	width: 600px;
+	margin: 0 auto;
+}
+.padding-none {
+	padding: 0 !important;
+}
+.margin-none {
+	margin: 0 !important;
+}
+.glyphicon {
+	font-size: 30px;
+}
+.glyphicon-star {
+	color: #FFD966;
+}
+.glyphicon-star-empty {
+	color: #DADADA;
+}
+.glyphicon-star-empty:hover {
+	color: #FFD966;
+}
+.title-list-camera {
+	border: 1px solid #222;
+}
+.title-list-camera h3 {
+	color: #444;
+	margin-left: 10px;
+
+}
+.lower-block-list {
+	padding: 20px 20px;
+}
+.block-camera-mini {
+	border: 1px solid #222;
+	margin-top: -1px !important;
+	height: 124px;
+}
+.block-camera-max {
+	border: 1px solid #222;
+	margin-top: -1px !important;
+}
+
+.uppercase-text {
+	text-transform: uppercase;
+}
+.close-max {
+	font-weight: 700;
+	position: absolute;
+	color: #FFF;
+	font-size: 30px;
+	text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+	margin-left: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.content-camera-max {
+	margin: 0 10px;
+}
+.upper-block {
+	margin-top: 10px !important;
+	height: 65%;
+}
+.title-camera {
+	color: #6490DD;
+}
+.lower-block {
+	bottom: 10px;
+	position: absolute;
+	color: #999;
+	font-weight: 700;
+
+}
+.lower-block-max {
+	margin-top: 10px !important;
+	color: #999;
+	font-weight: 700;
+}
+.camera-image-mini {
+	height: 100%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.camera-image-max {
+	width: 100%;
+}
+.max-height {
+	height: 100%;
+}
+.camera-content-mini {
+	height: 100%;
+}
+
+.panel-group {
+	margin-bottom : 0;
+}
+.panel-group .panel {
+	margin-bottom: 0;
+	border-radius: 0px;
+}
+.panel-default {
+	border-color: none;
+}
+.panel-heading {
+	padding: 0;
+	border: none;
+}
+.panel {
+	border: none;
+	margin-bottom: 0;
+}
+.panel-default > .panel-heading {
+	border-color: #fff;
+	background-color: #fff;
+	color: #fff;
+}
+.panel-body {
+	padding: 0;
+}
+.dot_dot_dot { 
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.default-img {
+	width: 500px;
+	height: 500px;
+	background-color: black;
+}
